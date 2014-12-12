@@ -1,0 +1,299 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Lucy's JQuery mobile page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="themes/Lucy.min.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+		<link rel="stylesheet" href="css/custom.css"/>
+		<link type="text/css" href="skin/pink.flag/jplayer.pink.flag.css" rel="stylesheet" />
+	</head>
+
+<body>
+<!--Page 1-->
+	<section data-role="page" id="home" data-theme="a">
+<!--Header-->
+		<header data-role="header" data-position="fixed">
+			<h1>Lucy's JQuery mobile page</h1>
+			<nav data-role="navbar">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+<!--Main-->
+		<section data-role="main" class="ui-content">
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<h2>Gizmo the Mogwai</h2>
+					<p>Welcome to Lucy's JQuery Mobile website! Here you will learn all about Gizmo from the movie Gremlins.</p>
+				</div>
+				<div class="ui-block-b">
+					<img src="img/Gizmo.jpg" alt="Gizmo!">
+				</div>
+			</div>
+<!--Grid C-->
+			<div class="ui-grid-b ui-responsive">
+				<div class="ui-block-a">
+					<h3>What Gizmo can do.</h3>
+					<p>He can sing!</p>
+					<video width="200" height="200" controls>
+  					<source src="img/Gizmo.MOV" type="video/mov">
+  					<source src="img/Gizmo.mp4" type="video/mp4">
+  					Your browser does not support the video tag.
+					</video>				
+				</div>
+				<div class="ui-block-b" div id="water">
+					<h3>What he can't do.</h3>
+					<p>He can't be exposed to water or sunlight! Also, do NOT feed him after midnight!</p>
+					<img src="img/NoWater.jpg" alt="No Water" id="nowater">
+				</div>
+				<div class="ui-block-b">
+					<h3>Who is Gizmo?</h3>
+					<p>Gizmo is a Mogwai. He comes from a faraway land via Chinatown. To get your own Gizmo, fill out the form in the Contact page.</p>
+					<img src="img/Gizmocute.jpg" alt="Gizmo being cute">
+				</div>
+			</div>
+		</section>
+<!--Footer-->
+		<footer data-role="footer">
+			<p>All rights reserved.</p>
+		</footer>
+	</section><!--End of Page-->
+
+<!--Page 2-->
+	<section data-role="page" id="about">
+<!--Header-->
+		<header data-role="header" data-position="fixed">
+			<h1>About</h1>
+			<nav data-role="navbar">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+<!--Main-->
+		<section data-role="main" class="ui-content">
+			<h2>About</h2>
+			<p>This page cannot be found. The Gremlins have gotten into the website...RUN!!!</p>
+<!--JPlayer Audio-->
+<div id="jquery_jplayer_2" class="jp-jplayer"></div>
+<div id="jp_container_2" class="jp-audio" role="application" aria-label="media player">
+  <div class="jp-type-single">
+    <div class="jp-gui jp-interface">
+      <div class="jp-volume-controls">
+        <button class="jp-mute" role="button" tabindex="0">mute</button>
+        <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+        <div class="jp-volume-bar">
+          <div class="jp-volume-bar-value"></div>
+        </div>
+      </div>
+      <div class="jp-controls-holder">
+        <div class="jp-controls">
+          <button class="jp-play" role="button" tabindex="0">play</button>
+          <button class="jp-stop" role="button" tabindex="0">stop</button>
+        </div>
+        <div class="jp-progress">
+          <div class="jp-seek-bar">
+            <div class="jp-play-bar"></div>
+          </div>
+        </div>
+        <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+        <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+        <div class="jp-toggles">
+          <button class="jp-repeat" role="button" tabindex="0">repeat</button>
+        </div>
+      </div>
+    </div>
+    <div class="jp-details">
+      <div class="jp-title" aria-label="title">&nbsp;</div>
+    </div>
+    <div class="jp-no-solution">
+      <span>Update Required</span>
+      To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+    </div>
+  </div>
+</div>
+<!--End of JPlayer audio-->
+
+<!--Gremlins picture-->
+<img src="img/Stripe.jpg" alt="Bad Gremlins">
+
+
+<!--JPlayer video-->
+<div>
+	<title>Gremlins attack</title>
+	<h1>Gremlins attack</h1>
+	<p>RUN!!!!!</p>
+	<div id="jp_container_1" class="jp-video" role="application" aria-label="media player">
+	  <div class="jp-type-single">
+	    <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+	    <div class="jp-gui">
+	      <div class="jp-video-play">
+	        <button class="jp-video-play-icon" role="button" tabindex="0">play</button>
+	      </div>
+	      <div class="jp-interface">
+	        <div class="jp-progress">
+	          <div class="jp-seek-bar">
+	            <div class="jp-play-bar"></div>
+	          </div>
+	        </div>
+	        <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+	        <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+	        <div class="jp-details">
+	          <div class="jp-title" aria-label="title">&nbsp;</div>
+	        </div>
+	        <div class="jp-controls-holder">
+	          <div class="jp-volume-controls">
+	            <button class="jp-mute" role="button" tabindex="0">mute</button>
+	            <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+	            <div class="jp-volume-bar">
+	              <div class="jp-volume-bar-value"></div>
+	            </div>
+	          </div>
+	          <div class="jp-controls">
+	            <button class="jp-play" role="button" tabindex="0">play</button>
+	            <button class="jp-stop" role="button" tabindex="0">stop</button>
+	          </div>
+	          <div class="jp-toggles">
+	            <button class="jp-repeat" role="button" tabindex="0">repeat</button>
+	            <button class="jp-full-screen" role="button" tabindex="0">full screen</button>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	    <div class="jp-no-solution">
+	      <span>Update Required</span>
+	      To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+	    </div>
+	  </div>
+	</div>
+	</div>
+		</section>
+<!--Footer-->
+		<footer data-role="footer">
+			<p>All rights reserved.</p>
+		</footer>
+	</section><!--End of Page 2-->
+	<!--Page 3-->
+	<section data-role="page" id="contact">
+<!--Header-->
+		<header data-role="header" data-position="fixed">
+			<h1>Contact</h1>
+			<nav data-role="navbar">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+<!--Main-->
+		<section data-role="main" class="ui-content" id="form">
+			<h2>Contact</h2>
+			<p>Get your very own Gizmo! Hurry before the Gremlins take over.</p>
+			<label for="text-basic">Name (first and last):</label>
+			<input type="text" name="text-basic" id="text-basic" value="">
+			<label for="slider2">Have you ever had a pet before?</label>
+			<select name="slider2" id="slider2" data-role="slider">
+			    <option value="off">No</option>
+			    <option value="on">Yes</option>
+			</select>
+			<fieldset data-role="controlgroup">
+				    <legend>What kind of pet did you have?</legend>
+				    <input type="checkbox" name="checkbox-1a" id="checkbox-1a" checked="">
+				    <label for="checkbox-1a">Cat</label>
+				    <input type="checkbox" name="checkbox-2a" id="checkbox-2a">
+				    <label for="checkbox-2a">Dog</label>
+				    <input type="checkbox" name="checkbox-3a" id="checkbox-3a">
+				    <label for="checkbox-3a">Fish</label>
+				    <input type="checkbox" name="checkbox-4a" id="checkbox-4a">
+				    <label for="checkbox-4a">Iguana</label>
+			</fieldset>
+			<form>
+			    <div data-role="rangeslider">
+			        <label for="range-1a">How responsible would you rate yourself, on a scale of 0-100?</label>
+			        <input type="range" name="range-1a" id="range-1a" min="0" max="100" value="40">
+			        <label for="range-1b">Rangeslider:</label>
+			        <input type="range" name="range-1b" id="range-1b" min="0" max="100" value="80">
+			    </div>
+			</form>
+			<label for ="select-choice-1" class="select">If you are approved, how soon do you want Gizmo to arrive?</label>
+			<select name="select-choice-1" id="select-choice-1">
+			    <option value="standard">7 months</option>
+			    <option value="rush">Rush: 90 days</option>
+			    <option value="express">Express: 45 days (depending on 		availability)</option>
+			</select>
+			<label for="tel">Please enter your telephone number. If we have determined that you are a good fit, we will call you during business hours.</label>
+			<input type="tel" name="tel" id="tel" value="">
+			<audio width="200" height="200" controls>
+  					<source src="ByeBilly.MP3" type="audio/mpeg">
+  					<source src="ByeBilly.Ogg" type="audio/ogg">
+  					Your browser does not support the audio tag.
+			</audio>				
+		</section>
+<!--Footer-->
+		<footer data-role="footer">
+			<p>All rights reserved.</p>
+		</footer>
+	</section><!--End of Page 3-->
+
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+	<script type="text/javascript">
+    $(document).ready(function(){
+      $("#jquery_jplayer_1").jPlayer({
+        ready: function () {
+          $(this).jPlayer("setMedia", {
+            title: "HELP!!!",
+            m4v: "GizmoRun.mp4",
+            ogg: "Gizmo.ogg",
+            poster: "img/Gizmo.jpg"
+          });
+        },
+        cssSelectorAncestor: "#jp_container_1",
+        swfPath: "js",
+        supplied: "m4v, ogg",
+        useStateClassSkin: true,
+        autoBlur: false,
+        smoothPlayBar: true,
+        keyEnabled: true,
+        remainingDuration: true,
+        toggleDuration: true
+      });
+    });
+    </script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("#jquery_jplayer_2").jPlayer({
+        ready: function () {
+          $(this).jPlayer("setMedia", {
+            title: "Gremlins!",
+            m4a: "Gremlins.m4a",
+            oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+          });
+        },
+        cssSelectorAncestor: "#jp_container_2",
+        swfPath: "/js",
+        supplied: "m4a, oga",
+        useStateClassSkin: true,
+        autoBlur: false,
+        smoothPlayBar: true,
+        keyEnabled: true,
+        remainingDuration: true,
+        toggleDuration: true
+      });
+    });
+  </script>
+
+</body>
+</html>
