@@ -3,6 +3,12 @@ body {
 	text-align: center;
 }
 
+#form {
+	padding: 0 10% 10% 10%;
+	width: 80%;
+
+	}
+
 img {
 	width: 100%;
 	max-width: 100%;
