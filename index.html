@@ -23,6 +23,8 @@
 					<li><a href="#home">Home</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#contact">Contact</a></li>
+					<li><a href="#pictures">Pictures</a></li>
+
 				</ul>
 			</nav>
 		</header>
@@ -42,9 +44,9 @@
 				<div class="ui-block-a">
 					<h3>What Gizmo can do.</h3>
 					<p>He can sing!</p>
-					<video width="200" height="200" controls>
-  					<source src="img/Gizmo.MOV" type="video/mov">
-  					<source src="img/Gizmo.mp4" type="video/mp4">
+					<video width="300" height="300" controls>
+  					<source src="vid/Gizmo.mov" type="video/mov">
+  					<source src="vid/Gizmo.ogg" type="video/ogg">
   					Your browser does not support the video tag.
 					</video>				
 				</div>
@@ -76,6 +78,7 @@
 					<li><a href="#home">Home</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#contact">Contact</a></li>
+					<li><a href="#pictures">Pictures</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -192,6 +195,8 @@
 					<li><a href="#home">Home</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#contact">Contact</a></li>
+					<li><a href="#pictures">Pictures</a></li>
+
 				</ul>
 			</nav>
 		</header>
@@ -206,8 +211,8 @@
 			    <option value="off">No</option>
 			    <option value="on">Yes</option>
 			</select>
-			<fieldset data-role="controlgroup">
-				    <legend>What kind of pet did you have?</legend>
+			<fieldset data-role="controlgroup" data-type="horizontal" id="control">
+				    <legend id="control1">What kind of pet did you have?</legend>
 				    <input type="checkbox" name="checkbox-1a" id="checkbox-1a" checked="">
 				    <label for="checkbox-1a">Cat</label>
 				    <input type="checkbox" name="checkbox-2a" id="checkbox-2a">
@@ -234,8 +239,8 @@
 			<label for="tel">Please enter your telephone number. If we have determined that you are a good fit, we will call you during business hours.</label>
 			<input type="tel" name="tel" id="tel" value="">
 			<audio width="200" height="200" controls>
-  					<source src="ByeBilly.mp3" type="audio/mpeg">
-  					<source src="ByeBilly.ogg" type="audio/ogg">
+  					<source src="aud/ByeBilly.mp3" type="audio/mpeg">
+  					<source src="aud/ByeBilly.ogg" type="audio/ogg">
   					Your browser does not support the audio tag.
 			</audio>
 			<form>
@@ -248,18 +253,57 @@
 		</footer>
 	</section><!--End of Page 3-->
 
+<!--Page 4-->
+	<section data-role="page" id="pictures">
+<!--Header-->
+		<header data-role="header" data-position="fixed">
+			<h1>Pictures of Gizmo</h1>
+			<nav data-role="navbar">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="#pictures">Pictures</a></li>
+				</ul>
+			</nav>
+		</header>
+<!--Main-->
+		<section data-role="main" class="ui-content">
+			<h2>Pictures</h2>
+				<main data-role="content">
+				<p>Gizmo is in hiding! Look at these pictures while we search for him.</p>
+				<div id="Gizzy" class="start"></div>
+				</main>
+		</section>
+<!--Footer-->
+		<footer data-role="footer">
+			<p>All rights reserved.</p>
+		</footer>
+	</section><!--End of Page 4-->
+
+	<!--Javascript-->
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+	<!--Event-->
+	<script>
+	$(document).ready(function() {
+		$('main').bind('swipeleft', function(event){
+			$('#Gizzy').removeClass().addclass('one');
+		});	//end swipeleft
+	}); //end ready
+	</script>
+
+<!--JPlayer-->
 	<script type="text/javascript">
     $(document).ready(function(){
       $("#jquery_jplayer_1").jPlayer({
         ready: function () {
           $(this).jPlayer("setMedia", {
             title: "HELP!!!",
-            m4v: "GizmoRun.mp4",
-            ogg: "Gizmo.ogg",
+            m4v: "vid/GizmoRun.mp4",
+            ogg: "vid/GizmoRun.ogg",
             poster: "img/Gizmo.jpg"
           });
         },
@@ -281,13 +325,13 @@
         ready: function () {
           $(this).jPlayer("setMedia", {
             title: "Gremlins!",
-            m4a: "Gremlins.m4a",
-            oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+            m4a: "aud/Gremlins.m4a",
+            ogg: "aud/Gremlins.ogg"
           });
         },
         cssSelectorAncestor: "#jp_container_2",
         swfPath: "/js",
-        supplied: "m4a, oga",
+        supplied: "m4a, ogg",
         useStateClassSkin: true,
         autoBlur: false,
         smoothPlayBar: true,
