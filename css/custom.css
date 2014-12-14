@@ -36,12 +36,21 @@ video {
 }
 
 
-@media all and (max-width: 400px) {
-	.ui-grid-c .ui-block-a,
-	.ui-grid-c .ui-block-b,
-	.ui-grid-c .ui-block-c, {
-		
+@media all and (max-width: 700px) {
+	.ui-grid-b .ui-block-a,
+	.ui-grid-b .ui-block-b,
+	.ui-grid-b .ui-block-c, { 
+		width: 100%;
+		float: none;
 	}
 
 }
+
+@media all and (min-width: 750px) {
+
+ 	.ui-grid-a .ui-block-a{
+		font-size: 60px;
+ 	}
+
+
 
