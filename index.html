@@ -64,7 +64,7 @@
 		</section>
 <!--Footer-->
 		<footer data-role="footer">
-			<p>Gremlins the movie (1984)</p>
+			<p>Gremlins (1984)</p>
 		</footer>
 	</section><!--End of Page-->
 
@@ -182,7 +182,7 @@
 		</section>
 <!--Footer-->
 		<footer data-role="footer">
-			<p>Gremlins the movie (1984)</p>
+			<p>Gremlins (1984)</p>
 		</footer>
 	</section><!--End of Page 2-->
 	<!--Page 3-->
@@ -249,7 +249,7 @@
 		</section>
 <!--Footer-->
 		<footer data-role="footer">
-			<p>Gremlins the movie (1984)</p>
+			<p>Gremlins (1984)</p>
 		</footer>
 	</section><!--End of Page 3-->
 
@@ -270,28 +270,28 @@
 <!--Main-->
 		<section data-role="main" class="ui-content">
 			<h2>Pictures</h2>
-				<main data-role="content">
-				<p>Gizmo is in hiding! Click and drag to the left underneath this text to search for him!</p>
+				<main data-role="content" >
+				<p>Gizmo is in hiding! Swipe left to search for him!</p>
 				<div id="Gizzy" class="start"></div>
 				</main>
 		</section>
 <!--Footer-->
 		<footer data-role="footer">
-			<p>Gremlins the movie (1984)</p>
+			<p>Gremlins (1984)</p>
 		</footer>
 	</section><!--End of Page 4-->
 
 	<!--Javascript-->
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!-- <script type="text/javascript" src="js/jquery.min.js"></script> -->
 	<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
 	<!--Event-->
 	<script>
 	$(document).ready(function() {
 		$('main').bind('swipeleft', function(event){
-			$('#Gizzy').removeClass().addclass('one');
-		});	//end swipeleft
+			$('#Gizzy').removeClass().addClass('hiding');
+		});	//end taphold
 	}); //end ready
 	</script>
 
