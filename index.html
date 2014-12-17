@@ -15,53 +15,53 @@
 <body>
 <!--Page 1-->
 	<section data-role="page" id="home" data-theme="a">
+	
 <!--Header-->
-		<header data-role="header" data-position="fixed">
-			<h1>Lucy's JQuery mobile page</h1>
+	<header data-role="header" data-position="fixed">
+		<h1>Lucy's JQuery mobile page</h1>
 			<nav data-role="navbar">
 				<ul>
 					<li><a href="#home">Home</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#contact">Contact</a></li>
 					<li><a href="#pictures">Pictures</a></li>
-
 				</ul>
 			</nav>
-		</header>
+	</header>
 <!--Main-->
-		<section data-role="main" class="ui-content">
-			<div class="ui-grid-a">
-				<div class="ui-block-a">
-					<h2>Gizmo the Mogwai</h2>
-					<p>Welcome to Lucy's JQuery Mobile website! Here you will learn all about Gizmo from the movie Gremlins.</p>
-				</div>
-				<div class="ui-block-b">
-					<img src="img/Gizmo.jpg" alt="Gizmo!">
-				</div>
+	<section data-role="main" class="ui-content">
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+				<h2>Gizmo the Mogwai</h2>
+				<p>Welcome to Lucy's JQuery Mobile website! Here you will learn all about Gizmo from the movie Gremlins.</p>
 			</div>
+			<div class="ui-block-b">
+				<img src="img/Gizmo.jpg" alt="Gizmo!">
+			</div>
+		</div>
 <!--Grid B-->
-			<div class="ui-grid-b ui-responsive">
-				<div class="ui-block-a">
-					<h3>What Gizmo can do.</h3>
-					<p>He can sing!</p>
+		<div class="ui-grid-b ui-responsive">
+			<div class="ui-block-a">
+				<h3>What Gizmo can do.</h3>
+				<p>He can sing!</p>
 					<video width="300" height="300" controls>
   					<source src="vid/Gizmo.mov" type="video/mov">
   					<source src="vid/Gizmo.ogg" type="video/ogg">
   					Your browser does not support the video tag.
 					</video>				
-				</div>
-				<div class="ui-block-b" div id="water">
-					<h3>What he can't do.</h3>
-					<p>He can't be exposed to water or sunlight! Also, do NOT feed him after midnight!</p>
-					<img src="img/NoWater.jpg" alt="No Water" id="nowater">
-				</div>
-				<div class="ui-block-c">
-					<h3>Who is Gizmo?</h3>
-					<p>Gizmo is a Mogwai. He comes from a faraway land via Chinatown. To get your own Gizmo, fill out the form in the Contact page.</p>
-					<img src="img/Gizmocute.jpg" alt="Gizmo being cute">
-				</div>
 			</div>
-		</section>
+			<div class="ui-block-b" div id="water">
+				<h3>What he can't do.</h3>
+				<p>He can't be exposed to water or sunlight! Also, do NOT feed him after midnight!</p>
+				<img src="img/NoWater.jpg" alt="No Water" id="nowater">
+			</div>
+			<div class="ui-block-c">
+				<h3>Who is Gizmo?</h3>
+				<p>Gizmo is a Mogwai. He comes from a faraway land via Chinatown. To get your own Gizmo, fill out the form in the Contact page.</p>
+				<img src="img/Gizmocute.jpg" alt="Gizmo being cute">
+			</div>
+			</div>
+	</section>
 <!--Footer-->
 		<footer data-role="footer">
 			<p>Gremlins (1984)</p>
@@ -80,12 +80,12 @@
 					<li><a href="#contact">Contact</a></li>
 					<li><a href="#pictures">Pictures</a></li>
 				</ul>
-			</nav>
+				</nav>
 		</header>
 <!--Main-->
-		<section data-role="main" class="ui-content">
-			<h2>About</h2>
-			<p>This page cannot be found. The Gremlins have gotten into the website...RUN!!!</p>
+<section data-role="main" class="ui-content">
+	<h2>About</h2>
+	<p>This page cannot be found. The Gremlins have gotten into the website...RUN!!!</p>
 <!--JPlayer Audio-->
 <div id="jquery_jplayer_2" class="jp-jplayer"></div>
 <div id="jp_container_2" class="jp-audio" role="application" aria-label="media player">
@@ -125,11 +125,8 @@
   </div>
 </div>
 <!--End of JPlayer audio-->
-
 <!--Gremlins picture-->
 <img src="img/Stripe.jpg" alt="Bad Gremlins">
-
-
 <!--JPlayer video-->
 <div>
 	<title>Gremlins attack</title>
@@ -179,56 +176,61 @@
 	  </div>
 	</div>
 	</div>
-		</section>
+</section>
+	<!--Pop up-->
+	<a href="#popupCloseRight" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Why are you still here?</a>
+	<div data-role="popup" id="popupCloseRight" class="ui-content" style="max-width:280px">
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<p>Even Gizmo ran away!</p>
+	</div>
 <!--Footer-->
-		<footer data-role="footer">
-			<p>Gremlins (1984)</p>
-		</footer>
-	</section><!--End of Page 2-->
+	<footer data-role="footer">
+		<p>Gremlins (1984)</p>
+	</footer>
+</section><!--End of Page 2-->
 	<!--Page 3-->
-	<section data-role="page" id="contact">
+<section data-role="page" id="contact">
 <!--Header-->
-		<header data-role="header" data-position="fixed">
-			<h1>Contact</h1>
-			<nav data-role="navbar">
-				<ul>
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<li><a href="#pictures">Pictures</a></li>
-
-				</ul>
-			</nav>
-		</header>
+	<header data-role="header" data-position="fixed">
+		<h1>Contact</h1>
+		<nav data-role="navbar">
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li><a href="#pictures">Pictures</a></li>
+			</ul>
+		</nav>
+	</header>
 <!--Main-->
-		<section data-role="main" class="ui-content" id="form">
-			<h2>Contact</h2>
-			<p>Get your very own Gizmo! Hurry before the Gremlins take over.</p>
+<section data-role="main" class="ui-content" id="form">
+		<h2>Contact</h2>
+		<p>Get your very own Gizmo! Hurry before the Gremlins take over.</p>
 			<label for="text-basic">Name (first and last):</label>
 			<input type="text" name="text-basic" id="text-basic" value="">
 			<label for="slider2">Have you ever had a pet before?</label>
 			<select name="slider2" id="slider2" data-role="slider">
-			    <option value="off">No</option>
-			    <option value="on">Yes</option>
-			</select>
-			<fieldset data-role="controlgroup" data-type="horizontal" id="control">
-				    <legend id="control1">What kind of pet did you have?</legend>
-				    <input type="checkbox" name="checkbox-1a" id="checkbox-1a" checked="">
-				    <label for="checkbox-1a">Cat</label>
+			<option value="off">No</option>
+	    	<option value="on">Yes</option>
+		</select>
+		<fieldset data-role="controlgroup" data-type="horizontal" id="control">
+		    <legend id="control1">What kind of pet did you have?</legend>
+			    <input type="checkbox" name="checkbox-1a" id="checkbox-1a"	  checked="">
+			    <label for="checkbox-1a">Cat</label>
 				    <input type="checkbox" name="checkbox-2a" id="checkbox-2a">
 				    <label for="checkbox-2a">Dog</label>
 				    <input type="checkbox" name="checkbox-3a" id="checkbox-3a">
 				    <label for="checkbox-3a">Fish</label>
 				    <input type="checkbox" name="checkbox-4a" id="checkbox-4a">
 				    <label for="checkbox-4a">Iguana</label>
-			</fieldset>
-			<form>
-			    <div data-role="rangeslider">
-			        <label for="range-1a">How responsible would you rate yourself, on a scale of 0-100?</label>
-			        <input type="range" name="range-1a" id="range-1a" min="0" max="100" value="40">
-			        <label for="range-1b">Rangeslider:</label>
-			        <input type="range" name="range-1b" id="range-1b" min="0" max="100" value="80">
-			    </div>
+		</fieldset>
+		<form>
+			  <div data-role="rangeslider">
+			    <label for="range-1a">How responsible would you rate 		yourself, on a scale of 0-100?</label>
+			    <input type="range" name="range-1a" id="range-1a" min="0" 		max="100" value="40">
+			    <label for="range-1b">Rangeslider:</label>
+			    <input type="range" name="range-1b" id="range-1b" min="0" 		max="100" value="80">
+			  </div>
 			</form>
 			<label for ="select-choice-1" class="select">If you are approved, how soon do you want Gizmo to arrive?</label>
 			<select name="select-choice-1" id="select-choice-1">
@@ -239,46 +241,45 @@
 			<label for="tel">Please enter your telephone number. If we have determined that you are a good fit, we will call you during business hours.</label>
 			<input type="tel" name="tel" id="tel" value="">
 			<audio width="200" height="200" controls>
-  					<source src="aud/ByeBilly.mp3" type="audio/mpeg">
-  					<source src="aud/ByeBilly.ogg" type="audio/ogg">
-  					Your browser does not support the audio tag.
+  				<source src="aud/ByeBilly.mp3" type="audio/mpeg">
+  				<source src="aud/ByeBilly.ogg" type="audio/ogg">
+  				Your browser does not support the audio tag.
 			</audio>
 			<form>
     		<input type="submit" value="Submit">
 			</form>				
 		</section>
 <!--Footer-->
-		<footer data-role="footer">
-			<p>Gremlins (1984)</p>
-		</footer>
+	<footer data-role="footer">
+		<p>Gremlins (1984)</p>
+	</footer>
 	</section><!--End of Page 3-->
-
 <!--Page 4-->
 	<section data-role="page" id="pictures">
 <!--Header-->
-		<header data-role="header" data-position="fixed">
-			<h1>Pictures of Gizmo</h1>
+	<header data-role="header" data-position="fixed">
+		<h1>Pictures of Gizmo</h1>
 			<nav data-role="navbar">
-				<ul>
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<li><a href="#pictures">Pictures</a></li>
-				</ul>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li><a href="#pictures">Pictures</a></li>
+			</ul>
 			</nav>
-		</header>
+	</header>
 <!--Main-->
-		<section data-role="main" class="ui-content">
-			<h2>Pictures</h2>
-				<main data-role="content" >
-				<p>Gizmo is in hiding! Swipe left to search for him!</p>
-				<div id="Gizzy" class="start"></div>
-				</main>
-		</section>
+	<section data-role="main" class="ui-content">
+		<h2>Pictures</h2>
+			<main data-role="content" >
+			<p>Gizmo is in hiding! Swipe left to search for him!</p>
+			<div id="Gizzy" class="start"></div>
+			</main>
+	</section>
 <!--Footer-->
-		<footer data-role="footer">
-			<p>Gremlins (1984)</p>
-		</footer>
+	<footer data-role="footer">
+		<p>Gremlins (1984)</p>
+	</footer>
 	</section><!--End of Page 4-->
 
 	<!--Javascript-->
