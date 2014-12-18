@@ -286,7 +286,8 @@
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	<!-- <script type="text/javascript" src="js/jquery.min.js"></script> -->
-	<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+	<script src="js/jquery.jplayer.min.js"></script>
+	<script src="js/av.js"></script>
 	<!--Event-->
 	<script>
 	$(document).ready(function() {
@@ -295,53 +296,6 @@
 		});	//end taphold
 	}); //end ready
 	</script>
-
-<!--JPlayer-->
-	<script type="text/javascript">
-    $(document).ready(function(){
-      $("#jquery_jplayer_1").jPlayer({
-        ready: function () {
-          $(this).jPlayer("setMedia", {
-            title: "HELP!!!",
-            m4v: "vid/GizmoRun.mp4",
-            ogg: "vid/GizmoRun.ogg",
-            poster: "img/Gizmo.jpg"
-          });
-        },
-        cssSelectorAncestor: "#jp_container_1",
-        swfPath: "js",
-        supplied: "m4v, ogg",
-        useStateClassSkin: true,
-        autoBlur: false,
-        smoothPlayBar: true,
-        keyEnabled: true,
-        remainingDuration: true,
-        toggleDuration: true
-      });
-    });
-    </script>
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $("#jquery_jplayer_2").jPlayer({
-        ready: function () {
-          $(this).jPlayer("setMedia", {
-            title: "Gremlins!",
-            m4a: "aud/Gremlins.m4a",
-            ogg: "aud/Gremlins.ogg"
-          });
-        },
-        cssSelectorAncestor: "#jp_container_2",
-        swfPath: "/js",
-        supplied: "m4a, ogg",
-        useStateClassSkin: true,
-        autoBlur: false,
-        smoothPlayBar: true,
-        keyEnabled: true,
-        remainingDuration: true,
-        toggleDuration: true
-      });
-    });
-  </script>
 
 </body>
 </html>

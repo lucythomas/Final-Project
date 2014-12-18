@@ -9,7 +9,7 @@ $(document).ready(function(){
           });
         },
         cssSelectorAncestor: "#jp_container_1",
-        swfPath: "js",
+        swfPath: "/js",
         supplied: "m4v, ogg",
         useStateClassSkin: true,
         autoBlur: false,
@@ -18,7 +18,6 @@ $(document).ready(function(){
         remainingDuration: true,
         toggleDuration: true
       });
-    });
 
       $("#jquery_jplayer_2").jPlayer({
         ready: function () {
